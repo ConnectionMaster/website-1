@@ -144,7 +144,7 @@ overrides:
     processor: a-plugin/markdown
 ```
 
-See [Specifying Processor](../user-guide/configuring#specifying-processor) for details.
+See [Specifying Processor](../user-guide/configuring/plugins#specifying-processor) for details.
 
 #### File Extension-named Processor
 
@@ -205,7 +205,7 @@ If the example plugin above were called `eslint-plugin-myPlugin`, the `myConfig`
 
 ```
 
-**Note:** Please note that configuration will not enable any of the plugin's rules by default, and instead should be treated as a standalone config. This means that you must specify your plugin name in the `plugins` array as well as any rules you want to enable that are part of the plugin. Any plugin rules must be prefixed with the short or long plugin name. See [Configuring Plugins](../user-guide/configuring#configuring-plugins) for more information.
+**Note:** Please note that configuration will not enable any of the plugin's rules by default, and instead should be treated as a standalone config. This means that you must specify your plugin name in the `plugins` array as well as any rules you want to enable that are part of the plugin. Any plugin rules must be prefixed with the short or long plugin name. See [Configuring Plugins](../user-guide/configuring/plugins#configuring-plugins) for more information.
 
 ### Peer Dependency
 
@@ -223,6 +223,14 @@ The plugin support was introduced in ESLint version `0.8.0`. Ensure the `peerDep
 ### Testing
 
 ESLint provides the [`RuleTester`](/docs/developer-guide/nodejs-api#ruletester) utility to make it easy to test the rules of your plugin.
+
+### Linting
+
+ESLint plugins should be linted too! It's suggested to lint your plugin with the `recommended` configurations of:
+
+* [eslint](https://www.npmjs.com/package/eslint)
+* [eslint-plugin-eslint-plugin](https://www.npmjs.com/package/eslint-plugin-eslint-plugin)
+* [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)
 
 ## Share Plugins
 

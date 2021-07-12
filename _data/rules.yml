@@ -736,7 +736,7 @@ categories:
         fixable: false
         name: max-lines
         recommended: false
-      - description: enforce a maximum number of line of code in a function
+      - description: enforce a maximum number of lines of code in a function
         fixable: false
         name: max-lines-per-function
         recommended: false
@@ -862,7 +862,7 @@ categories:
         fixable: true
         name: nonblock-statement-body-position
         recommended: false
-      - description: enforce consistent line breaks inside braces
+      - description: enforce consistent line breaks after opening and before closing braces
         fixable: true
         name: object-curly-newline
         recommended: false
